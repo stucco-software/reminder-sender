@@ -87,7 +87,8 @@ const createEmail = async (reminder) => {
 const send2queue = async (id) => {
   // TKTK
   console.log(`add ${id} to queue`)
-  return true
+  let res = await fetch(`https://zeplo.to/https://reminder-sender.vercel.app/email/${id}?_token=<insert_token>`)
+  return res
 }
 
 export const GET = async (event) => {
