@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<h1>Email Reminder Sender</h1>
+
+<form
+  method="POST"
+  action="/">
+  <label>User Email</label>
+  <input type="email" name="email">
+  <button>Log In</button>
+</form>
+
+<style>
+  label, input {
+    display: block;
+  }
+</style>
